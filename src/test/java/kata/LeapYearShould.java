@@ -1,7 +1,8 @@
 package kata;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class LeapYearShould {
     @Test
@@ -9,7 +10,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(3);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -17,7 +18,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(4);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -25,7 +26,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(400);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -33,7 +34,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(1997);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -41,7 +42,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(1996);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -49,7 +50,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(1600);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -57,7 +58,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(1800);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -65,7 +66,7 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(500);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -73,6 +74,6 @@ class LeapYearShould {
     {
         var LeapYear = new LeapYear();
         var result = LeapYear.isLeapYear(1000);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 }
