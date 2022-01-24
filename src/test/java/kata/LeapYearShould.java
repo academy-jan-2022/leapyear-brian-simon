@@ -44,4 +44,20 @@ class LeapYearShould {
         assertEquals(true, result);
     }
 
+    @Test
+    void return_true_when_1600_is_passed()
+    {
+        var LeapYear = new LeapYear();
+        var result = LeapYear.isLeapYear(1600);
+        assertEquals(true, result);
+    }
+
+    @Test
+    void return_false_when_1800_is_passed()
+    {
+        var LeapYear = new LeapYear();
+        var result = LeapYear.isLeapYear(1800);
+        assertEquals(false, result);
+    }
+
 }
